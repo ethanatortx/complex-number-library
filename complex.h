@@ -2,8 +2,15 @@
 #ifndef COMPLEX_H
 #define COMPLEX_H
 
+class complex {
+	public:
+		double real;			// Real part
+		double imaginary;		// Imaginary part
+};
+
 // Declarations
 double abs(const complex c);
+/*
 double arg(const complex c);
 complex conj(const complex c);
 double imag(const complex& c);
@@ -28,6 +35,6 @@ complex sinh(const complex c);
 complex sqrt(const complex c);
 complex tan(const complex c);
 complex tanh(const complex c);
-
+*/
 // End header file
 #endif

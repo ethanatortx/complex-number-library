@@ -1,9 +1,11 @@
 #include <iostream>
 #include <string>
 #include <fstream>
-#include <complex.h>
+#include "complex.h"
 using namespace std;
+
 int main() {
-	cout << "This is a test of the complex library\n";
-	
+	cout << "Begin complex number file testing\n";
+	complex a = {1,2};
+	cout << abs(a);
 }
