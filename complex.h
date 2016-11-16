@@ -12,6 +12,11 @@ class complex {
 		complex();
 };
 
+// I/O Functions
+
+ostream& operator<<(ostream&, const complex&); //inserter
+istream& operator>>(istream&, complex&); //extractor
+
 // Standard Operator Functions
 complex operator+(complex a, complex b);
 complex operator-(complex a, complex b);
