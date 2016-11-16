@@ -6,6 +6,10 @@ using namespace std;
 
 int main() {
 	cout << "Begin complex number file testing\n";
-	complex a = {1,2};
-	cout << abs(a);
+	cout << "...Instantiating complex number with 1+2i\n";
+	complex a(1,2);
+	cout << "...Constructor success!\n";
+	cout << "\n\nTRIG FUNCTIONS\n";
+	cout << "Absolute value abs(): " << abs(a) << endl;
+	cout << "Angle arg(): " << arg(a) << endl;
 }

@@ -1,4 +1,5 @@
 #include <math.h>
+#include "complex.h"
 using namespace std;
 
 /* PUT CONSTRUCTORS HERE */
@@ -42,8 +43,7 @@ double abs(const complex c) {
 	@param c the complex number to be used
 	@return angle the angle of c
 */
-	/*
 double arg(const complex c) {
-
+	double angle = atan(c.imaginary/c.real);
+	return angle;
 }
-*/

@@ -1,1 +1,2 @@
-g++ test.cpp complex.cpp
+g++ test.cpp complex.cpp -o test.exe
+test

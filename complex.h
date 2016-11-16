@@ -14,8 +14,8 @@ class complex {
 
 // Declarations
 double abs(const complex c);
-/*
 double arg(const complex c);
+/*
 complex conj(const complex c);
 double imag(const complex& c);
 double norm(const complex c);
