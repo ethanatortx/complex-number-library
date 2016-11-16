@@ -1,2 +1,3 @@
-g++ test.cpp complex.cpp -o test.exe
+cls
+g++ test.cpp complex.cpp addition.cpp  -o test.exe
 test
