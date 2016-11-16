@@ -12,4 +12,6 @@ int main() {
 	cout << "\n\nTRIG FUNCTIONS\n";
 	cout << "Absolute value abs(): " << abs(a) << endl;
 	cout << "Angle arg(): " << arg(a) << endl;
+	complex b(3,4);
+	cout << abs(a + b);
 }
