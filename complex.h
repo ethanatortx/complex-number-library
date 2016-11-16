@@ -12,7 +12,18 @@ class complex {
 		complex();
 };
 
-// Declarations
+// Standard Operator Functions
+complex operator+(complex a, complex b);
+complex operator-(complex a, complex b);
+complex operator*(complex a, complex b);
+complex operator/(complex a, complex b);
+
+complex operator+=(complex a, complex b);
+complex operator-=(complex a, complex b);
+complex operator*=(complex a, complex b);
+complex operator/=(complex a, complex b);
+
+// Arithmetic Function Declarations
 double abs(const complex c);
 double arg(const complex c);
 /*
