@@ -2,7 +2,23 @@
 using namespace std;
 
 /* PUT CONSTRUCTORS HERE */
+complex::complex()
+{
+	real = 0.0;
+	imaginary = 0.0;
+}
 
+complex::complex(double r)
+{
+	real = r;
+	imaginary = 0.0;
+}
+
+complex::complex(double r, double i)
+{
+	real = r;
+	imaginary = i;
+}
 
 /* METHODS BELOW */
 /**

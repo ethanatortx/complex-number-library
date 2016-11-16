@@ -6,6 +6,10 @@ class complex {
 	public:
 		double real;			// Real part
 		double imaginary;		// Imaginary part
+		
+		complex(double r, double i);
+		complex(double r);
+		complex();
 };
 
 // Declarations
