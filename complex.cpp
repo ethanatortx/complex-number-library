@@ -1,8 +1,15 @@
+/**
+	LASA Advanced Computer Science A2
+	complex.cpp
+	Purpose: Defines complex constructors and complex functions
+
+	@author: Harrison Tran
+*/
 #include <math.h>
 #include "complex.h"
 using namespace std;
 
-/* PUT CONSTRUCTORS HERE */
+/* CONSTRUCTORS */
 complex::complex()
 {
 	real = 0.0;
