@@ -28,13 +28,7 @@ complex::complex(double r, double i)
 	@return mag the magnitude of c
 */
 double abs(const complex c) {
-	double real = c.real;
-	double i = c.imaginary;
-
-	double real_sq = pow(real,2);
-	double i_sq = pow(i,2);
-
-	double mag = sqrt (real_sq + i_sq);
+	double mag = sqrt (pow(c.real,2) + pow(c.imaginary,2));
 	return mag;
 }
 
@@ -54,8 +48,7 @@ double arg(const complex c) {
 	@return con the complex conjugate of c
 */
 complex conj(const complex c) {
-	double neg_imaginary = c.imaginary * -1;
-	complex con(c.real,neg_imaginary);
+	complex con(c.real,c.imaginary * -1);
 	return con;
 }
 
@@ -85,11 +78,7 @@ double real(const complex& c) {
 	@return mag_sq the square of the magnitude of c
 */
 double norm(const complex c) {
-	double real = c.real;
-	double i = c.imaginary;
-	double real_sq = pow(real,2);
-	double i_sq = pow(i,2);
-	double mag_sq = real_sq + i_sq;
+	double mag_sq = pow(c.real,2) + pow(c.imaginary,2);
 	return mag_sq;
 }
 
@@ -100,8 +89,6 @@ double norm(const complex c) {
 	@return polar_complex an imaginary number 
 */
 complex polar(double mag, double ang) {
-	double real = mag * cos(ang);
-	double imag = mag * sin(ang);
-	complex polar_complex(real,imag);
+	complex polar_complex(mag * cos(ang),mag * sin(ang));
 	return polar_complex;
 }
