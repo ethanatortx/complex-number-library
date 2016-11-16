@@ -1,3 +1,6 @@
+#include <fstream>
+using namespace std;
+
 // Start header
 #ifndef COMPLEX_H
 #define COMPLEX_H
@@ -14,8 +17,8 @@ class complex {
 
 // I/O Functions
 
-ostream& operator<<(ostream&, const complex&); //inserter
-istream& operator>>(istream&, complex&); //extractor
+ostream& operator<<(ostream& lhs, const complex& rhs); //inserter
+istream& operator>>(istream& lhs, complex& rhs); //extractor
 
 // Standard Operator Functions
 complex operator+(complex a, complex b);

@@ -14,4 +14,7 @@ int main() {
 	cout << "Angle arg(): " << arg(a) << endl;
 	complex b(3,4);
 	cout << abs(a + b);
+	cout << a;
+	
+	//cin >> a;
 }
