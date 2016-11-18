@@ -5,7 +5,13 @@ using namespace std;
 
 ostream& operator<<(ostream& lhs, const complex& rhs) //inserter
 {
-	lhs << "" << rhs.real << ", " << rhs.imaginary << "i";
+	char mid;
+	if(rhs.imaginary >= 0) {
+		mid = '+';
+	} else {
+		mid = '-';
+	}
+	lhs << "" << rhs.real << " " << mid << " " << rhs.imaginary << "i";
 	return lhs;
 }
 
