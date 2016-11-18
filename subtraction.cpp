@@ -16,18 +16,15 @@ complex operator-(complex a, complex b) {
 	return x;
 }
 
-// assignement overload for addition equals to
-complex operator+=(complex a, complex b) {
+// assignement overload for subtraction: equals to
+void operator-=(complex &a, const complex &b) {
 
-	// declare return variable for difference of two things
-	complex x;
+	// modify complex input A: 
 
-	// subtract real number component
-	x.real = a.real - b.real;
+	// subtract real of complex B from real of complex A
+	a.real -= b.real;
 
-	// subtract imaginary number component
-	x.imaginary = a.imagninary - b.imaginary;
+	// subtract imaginary of complex B from imaginary of complex A
+	a.imaginary -= b.imaginary;
 
-	// return imaginary number
-	return x;
 }
