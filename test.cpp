@@ -16,5 +16,7 @@ int main() {
 	a += b;
 	cout << a;
 	
-	//cin >> a;
+	complex x;
+	cin >> x;
+	cout << x;
 }

@@ -1,10 +1,15 @@
 #include "complex.h"
 #include <fstream>
 #include <iostream>
+#include <stdlib.h>
 using namespace std;
 
 ostream& operator<<(ostream& lhs, const complex& rhs) //inserter
 {
+	lhs << "(" << rhs.real << ", " << rhs.imaginary << ")";
+	return lhs;
+	
+	/*
 	char mid;
 	if(rhs.imaginary >= 0) {
 		mid = '+';
@@ -13,16 +18,18 @@ ostream& operator<<(ostream& lhs, const complex& rhs) //inserter
 	}
 	lhs << "" << rhs.real << " " << mid << " " << rhs.imaginary << "i";
 	return lhs;
+	*/
 }
 
-//in progress
-/*istream& operator>>(istream& lhs, complex& rhs) //extractor
+istream& operator>>(istream& lhs, complex& rhs) //extractor
 {
+	cout << "YO" << endl;
+	
 	double r;
 	double i;
 	char input[20];
 	lhs.getline(input, 256);
-	
+		
 	int locParenthesis1;
 	int locComma;
 	int locParenthesis2;
@@ -36,4 +43,43 @@ ostream& operator<<(ostream& lhs, const complex& rhs) //inserter
 		if (input[i] == ')')
 			locParenthesis2 = i;
 	}
-}*/
+	
+	char real[10];
+	char imaginary[10];
+	int counter = 0;
+	
+	for(int j = locParenthesis1 + 1; j < locComma; j++)
+	{
+		real[counter] = input[j];
+		counter++;
+	}
+	
+	counter = 0;
+	if(input[locComma + 1] = ' ')
+	{
+		for (int k = locComma + 2; k < locParenthesis2; k++)
+		{
+			imaginary[counter] = input[k];
+			counter++;
+		}
+	}
+	counter = 0;
+	else
+	{
+		for (int l = locComma + 1; l < locParenthesis2; l++)
+		{
+			imaginary[counter] = input[l];
+			counter++;
+		}
+	}
+	
+	r = (double) atof(real);
+	i = (double) atof(imaginary);
+	
+	rhs.real = r;
+	rhs.imaginary = i;
+	
+	cout << "hey!" << endl;
+	
+	return lhs;
+}
