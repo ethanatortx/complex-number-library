@@ -7,14 +7,14 @@ using namespace std;
 int main() {
 	cout << "Begin complex number file testing\n";
 	cout << "...Instantiating complex number with 1+2i\n";
-	complex a(1,2);
+	complex a(-6,-3);
 	cout << "...Constructor success!\n";
 	cout << "\n\nTRIG FUNCTIONS\n";
 	cout << "Absolute value abs(): " << abs(a) << endl;
 	cout << "Angle arg(): " << arg(a) << endl;
-	complex b(3,4);
-	cout << a*b;
-	a*=b;
+	complex b(4,6);
+	cout << a/b;
+	a/=b;
 
 	cout << a;
 
