@@ -9,7 +9,7 @@ complex operator+(complex a, complex b)
 }
 
 // Not working at the moment.
-void operator+=(complex a, complex b)
+void operator+=(complex &a, const complex &b)
 {
 	a.real += b.real;
 	a.imaginary += b.imaginary;
