@@ -1,22 +1,31 @@
 // maybe more elegant and simple solution to io problem
 
 #include "complex.h"
+#include <stringstream>
 
-using namespace std;
+float realArr[2] = {0.0,0.0};
 
-double realArr[2] = {0.0,0.0};
-double imaginaryArr[2] = {0.0,0.0};
+// operator overload for inputstream: write input to complex number input variable
+complex operator>>(istream& is, complex& c) {
 
-
-istream& operator>>(istream& lhs, complex& rhs) {
-	int i = 0;
-	while (lhs.good()) {
-		char temp = lhs.get();
-		cout << temp;
-		/*if (atof(temp)!=0.0) {
-			realArr[i] = atof(temp);
-			i++
-		}*/
+	string pair = "";
+	while (is.good()) {
+		char temp = is.get();
+		pair.append(temp);
 	}
-	cout << realArr[0] << realArr[1] << endl;
+
+	token = strtok(pair, "(, )");
+
+	while (token != NULL) {
+		if (atof(token).good()) {
+			realArr[i] = token;
+		}
+		token = strtok(pair, "(, )");
+	}
+
+	complex ret;
+	ret.real = realArr[0];
+	ret.imaginary = realArr[1];
+
+	return ret;
 }
