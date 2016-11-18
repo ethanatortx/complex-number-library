@@ -13,8 +13,7 @@ int main() {
 	cout << "Absolute value abs(): " << abs(a) << endl;
 	cout << "Angle arg(): " << arg(a) << endl;
 	complex b(3,4);
-	cout << abs(a + b);
-	cout << a;
+	cout << a*b;
 	
 	//cin >> a;
 }
