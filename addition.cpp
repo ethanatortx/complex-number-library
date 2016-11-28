@@ -8,7 +8,6 @@ complex operator+(complex a, complex b)
 	return x;
 }
 
-// Not working at the moment.
 void operator+=(complex &a, const complex &b)
 {
 	a.real += b.real;
