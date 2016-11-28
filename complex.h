@@ -34,15 +34,14 @@ void operator/=(complex &a, const complex &b);
 // Arithmetic Function Declarations
 double abs(const complex c);
 double arg(const complex c);
-/*complex conj(const complex c);
+complex conj(const complex c);
 double imag(const complex& c);
 double norm(const complex c);
 complex polar(double mag, double ang=0.0);
 double real(const complex& c);
-*/
-// Equality 
 bool operator==(complex a, complex b);
 bool operator!=(complex a, complex b);
+
 /*
 complex acos(const complex c);
 complex asin(const complex c);
