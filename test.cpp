@@ -9,11 +9,23 @@ int main() {
 	cout << "...Instantiating complex number a with 1+2i\n";
 	complex a(1,2);
 	cout << "...Constructor success!\n";
-	complex b;
 	cout << "Input a complex number b: ";
-	cin >> b;
-	cout << "...Instantiating complex number b with " << b << endl;
+ 	complex b(4,8);
+	//cin >> b;
+	cout << "...Instantiating complex number x with " << b << endl;
 	cout << "...Constructor success!\n";
+	cout << endl;
+
+	if(a==b) {
+		cout << "\nThose complex numbers are equal." << endl;
+	} else {
+		cout << "\nThose complex numbers aren't equal." << endl;
+	}
+
+	cout << "Try entering a complex number: ";
+	complex x;
+	cin >> x;
+	cout << "You entered: " << x;
 
 	cout << "\n\nCOMPLEX ARITHMETIC\n";
 	cout << "a+b = " << a+b << endl;
@@ -21,7 +33,7 @@ int main() {
 	cout << "a*b = " << a*b << endl;
 	cout << "a/b = " << a/b << endl;
 
-	cout << "\n\nCOMPLEX FUNCTIONS\n";
+	cout << "\n\nCOMPLEX FUNCTIONS for complex number a\n";
 	cout << "Absolute value abs(): " << abs(a) << endl;
 	cout << "Angle arg(): " << arg(a) << endl;
 	cout << "Conjugate conj(): " << conj(a) << endl;
