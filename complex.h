@@ -37,7 +37,7 @@ double arg(const complex c);
 /*complex conj(const complex c);
 double imag(const complex& c);
 double norm(const complex c);
-complex polar(double mag m, double ang=0.0);
+complex polar(double mag, double ang=0.0);
 double real(const complex& c);
 */
 // Equality 
